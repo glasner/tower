@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "tower"
   gem.homepage = "http://github.com/glasner/tower"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Adds /app/services to Rails"
+  gem.description = "Put those models on a diet! Move your app logic to app/services"
   gem.email = "jordan@digitalignition.com"
   gem.authors = ["Jordan Glasner"]
   # dependencies defined in Gemfile
