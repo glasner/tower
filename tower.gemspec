@@ -29,7 +29,8 @@ Gem::Specification.new do |s|
     "lib/tower/engine.rb",
     "lib/tower/service.rb",
     "spec/spec_helper.rb",
-    "spec/tower_spec.rb"
+    "spec/tower_spec.rb",
+    "tower.gemspec"
   ]
   s.homepage = "http://github.com/glasner/tower"
   s.licenses = ["MIT"]
