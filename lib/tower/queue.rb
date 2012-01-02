@@ -27,7 +27,7 @@ class Tower::Queue
   # returns module for current backend, e.g. Tower::Queue::WithDelayedJob
   def backend_instance_methods
     ext = case backend.to_s
-      when 'Delayed::Job' then 'WithDelayedJob'
+      when 'Delayed::Backend::ActiveRecord::Job' then 'WithDelayedJob'
     end
     require_relative "queue/#{ext.underscore}"
     "Tower::Queue::#{ext}".constantize
