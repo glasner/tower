@@ -6,4 +6,5 @@ require 'rails'
 
 require 'tower/service'
 require 'tower/queue'
-require 'tower/engine'
+# require 'tower/engine'
+
