@@ -15,9 +15,10 @@ class Tower::Service
   end
   
   def self.later(*args)
-    new(*args).later
+    Tower::Queue.add self, *args
   end
   
+
   ## Initialize
   # takes any number of args which are set as instance variables
   def initialize(*args)

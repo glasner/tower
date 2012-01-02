@@ -1,4 +1,7 @@
 source "http://rubygems.org"
+
+gem 'rails', '~> 3.0.1'
+
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
