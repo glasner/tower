@@ -30,6 +30,7 @@ class Tower::Service
   # called by Service.now after initializing new service
   # override with service logic
   def run; raise NotImplementedError; end
+  alias :perform :run
   
   private
 
