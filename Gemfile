@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'rails', '~> 3.0.1'
+gem 'rails', '=3.0.7'
 
 # Add dependencies required to use your gem here.
 # Example:
