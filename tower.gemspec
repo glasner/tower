@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "tower"
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jordan Glasner"]
-  s.date = "2012-01-02"
+  s.date = "2012-02-17"
   s.description = "Put those models on a diet! Move your app logic to app/services"
   s.email = "jordan@digitalignition.com"
   s.extra_rdoc_files = [
@@ -66,6 +66,7 @@ Gem::Specification.new do |s|
     "lib/tower/enqueue.rb",
     "lib/tower/queue.rb",
     "lib/tower/queue/with_delayed_job.rb",
+    "lib/tower/queue/with_resque.rb",
     "lib/tower/service.rb",
     "spec/spec_helper.rb",
     "spec/tower/engine_spec.rb",
@@ -85,20 +86,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>, ["~> 3.0.1"])
+      s.add_runtime_dependency(%q<rails>, ["= 3.0.7"])
       s.add_development_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
-      s.add_dependency(%q<rails>, ["~> 3.0.1"])
+      s.add_dependency(%q<rails>, ["= 3.0.7"])
       s.add_dependency(%q<rspec>, ["~> 2.3.0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rails>, ["~> 3.0.1"])
+    s.add_dependency(%q<rails>, ["= 3.0.7"])
     s.add_dependency(%q<rspec>, ["~> 2.3.0"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
